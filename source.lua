@@ -1926,6 +1926,7 @@ end
 
 LunaUI.Enabled = false
 LunaUI.SmartWindow.Visible = false
+LunaUI.Notifications.Template.UICorner.CornerRadius = UDim.new(0,30)
 LunaUI.Notifications.Template.Visible = false
 LunaUI.DisplayOrder = 1000000000
 

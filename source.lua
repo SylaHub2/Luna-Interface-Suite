@@ -2026,6 +2026,24 @@ local KeySystem : Frame = Main.KeySystem
 -- 	end
 -- end
 
+
+
+
+for _, frame in ipairs(Elements:GetChildren()) do
+	if frame:IsA("Frame") and frame.Name ~= "Home" and frame.Name ~= "Settings" and frame.Name ~= "Template" then
+		local ImageLabel = Instance.new("ImageLabel")
+		ImageLabel.Parent = frame
+		ImageLabel.Image = "rbxassetid://4447044381"
+		ImageLabel.BackgroundTransparency = 1
+		ImageLabel.ImageTransparency = 0.9
+		ImageLabel.Size = UDim2.new(1, -4, 0.82, 0)
+		ImageLabel.ZIndex = 151
+		ImageLabel.Visible = true
+	end
+end
+
+
+
 local function Draggable(Bar, Window, enableTaptic, tapticOffset)
 	pcall(function()
 		local Dragging, DragInput, MousePos, FramePos

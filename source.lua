@@ -2029,18 +2029,26 @@ local KeySystem : Frame = Main.KeySystem
 
 
 
-for _, frame in ipairs(Elements:GetChildren()) do
-	if frame:IsA("Frame") and frame.Name ~= "Home" and frame.Name ~= "Settings" and frame.Name ~= "Template" then
-		local ImageLabel = Instance.new("ImageLabel")
-		ImageLabel.Parent = frame
-		ImageLabel.Image = "rbxassetid://4447044381"
-		ImageLabel.BackgroundTransparency = 1
-		ImageLabel.ImageTransparency = 0.9
-		ImageLabel.Size = UDim2.new(1, -4, 0.82, 0)
-		ImageLabel.ZIndex = 151
-		ImageLabel.Visible = true
+for _, v in ipairs(Elements:GetDescendants()) do
+	if v:IsA("Frame")
+		and v.Name ~= "Home"
+		and v.Name ~= "Settings"
+		and v.Name ~= "Template"
+	then
+		if not v:FindFirstChild("AutoImage") then
+			local img = Instance.new("ImageLabel")
+			img.Name = "AutoImage"
+			img.Parent = v
+			img.Image = "rbxassetid://4447044381"
+			img.BackgroundTransparency = 1
+			img.ImageTransparency = 0.9
+			img.Size = UDim2.new(1, -4, 0.82, 0)
+			img.ZIndex = 151
+			img.Visible = true
+		end
 	end
 end
+
 
 
 

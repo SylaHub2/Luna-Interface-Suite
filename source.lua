@@ -2332,7 +2332,8 @@ function Luna:CreateWindow(WindowSettings)
 	-- end)
 
 	LunaUI.Enabled = true
-   Main.CornerRadius = UDim.new(0,10)
+	local CornerLoL = Main.UICorner
+   CornerLoL.CornerRadius = UDim.new(0,10)
 	BlurModule(Main)
 
 	if WindowSettings.KeySystem then

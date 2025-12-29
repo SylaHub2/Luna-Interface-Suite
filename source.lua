@@ -2391,7 +2391,7 @@ function Luna:CreateWindow(WindowSettings)
 			KeySystem.textshit.Text = WindowSettings.KeySettings.Note
 
 			if KeySettings.SecondAction.Enabled == true then
-				Btn.Visible = true
+				Btn.Visible = false
 			end
 			
 			Btn.Interact.MouseButton1Click:Connect(function()

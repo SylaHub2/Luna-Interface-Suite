@@ -2383,6 +2383,7 @@ function Luna:CreateWindow(WindowSettings)
 				Btn = KeySystem.Action.Discord
 			end
 
+           Btn:Destroy()
 			local AttemptsRemaining = math.random(2, 5)
 
 			KeySystem.Visible = true
@@ -2390,11 +2391,6 @@ function Luna:CreateWindow(WindowSettings)
 			KeySystem.Subtitle.Text = WindowSettings.KeySettings.Subtitle
 			KeySystem.textshit.Text = WindowSettings.KeySettings.Note
 
-			if KeySettings.SecondAction.Enabled == true then
-				Btn.Visible = true
-			end
-
-            Btn:Destroy()
 
 
 			KeySystem.Action.Submit.Interact.MouseButton1Click:Connect(function()

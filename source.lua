@@ -2273,10 +2273,15 @@ function Luna:CreateWindow(WindowSettings)
 	local Passthrough = false
 
 	local Window = { Bind = Enum.KeyCode.K, CurrentTab = nil, State = true, Size = false, Settings = nil }
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0,8)
+UICorner.Parent = Main.Logo
 
+	
 	Main.Title.Title.Text = WindowSettings.Name
 	Main.Title.subtitle.Text = WindowSettings.Subtitle
 	Main.Logo.Image = "rbxassetid://" .. WindowSettings.LogoID
+
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
 	Main.Size = MainSize

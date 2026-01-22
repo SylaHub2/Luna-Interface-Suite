@@ -2361,7 +2361,7 @@ UICorner.Parent = Main.Logo
 
 	LunaUI.Enabled = true
 	local CornerLoL = Main.UICorner
-   CornerLoL.CornerRadius = UDim.new(0,15)
+   CornerLoL.CornerRadius = UDim.new(0,20)
 Main.BackgroundTransparency = 0.1
 Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 	BlurModule(Main)

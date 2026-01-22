@@ -1540,6 +1540,7 @@ local PresetGradients = {
 	Cherry = {Color3.fromRGB(148, 54, 54), Color3.fromRGB(168, 67, 70), Color3.fromRGB(188, 80, 86)},
 	Daylight = {Color3.fromRGB(51, 156, 255), Color3.fromRGB(89, 171, 237), Color3.fromRGB(127, 186, 218)},
 	Blossom = {Color3.fromRGB(255, 165, 243), Color3.fromRGB(213, 129, 231), Color3.fromRGB(170, 92, 218)},
+	Syla = {Color3.fromRGB(26, 195, 255), Color3.fromRGB(48, 93, 172), Color3.fromRGB(71, 134, 245)},
 }
 
 

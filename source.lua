@@ -2361,7 +2361,7 @@ UICorner.Parent = Main.Logo
 
 	LunaUI.Enabled = true
 	local CornerLoL = Main.UICorner
-   CornerLoL.CornerRadius = UDim.new(0,20)
+   CornerLoL.CornerRadius = UDim.new(0,17)
 Main.BackgroundTransparency = 0.1
 Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 	BlurModule(Main)
@@ -2677,7 +2677,7 @@ Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 				HomeTabPage.detailsholder.dashboard.Server.Time.Value.Text = convertToHMS(time())
 
 				-- Region
-				HomeTabPage.detailsholder.dashboard.Server.Region.Value.Text = Localization:GetCountryRegionForPlayerAsync(Players.LocalPlayer)
+				HomeTabPage.detailsholder.dashboard.Server.Region.Value.Text = "I don't need ur region dw"
 
 				checkFriends()
 			end
